@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Darelle KAMCHE</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+
+        <div id="date-time"></div>
+  
+        <script>
+          function updateTime() {
+            const now = new Date();
+            const dateTimeString = now.toLocaleString();  // Formate la date et l'heure
+            document.getElementById('date-time').innerHTML = dateTimeString;
+          }
+          setInterval(updateTime, 1000); // Met à jour chaque seconde
+        </script>
+        
+        
+          <div class="profile">
+              <img src="image/ma photo.jpg" alt="Photo de profil">
+              <h2>Darelle KAMCHE</h2>
+              <p>Étudiante en BTS SIO</p>
+          </div>
+          <div class="social-links">
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-google-mail"></i></a>
+        </div>
+          <nav>
+              <ul>
+                  <li><a href="index.html"><i class="fa fa-home"></i> Accueil</a></li>
+                  <li><a href="profil.html"><i class="fa fa-user"></i> Profil</a></li>
+                  <li><a href="parcours.html"><i class="fa fa-graduation-cap"></i> Parcours</a></li>
+                  <li><a href="#stage"><i class="fa fa-briefcase"></i> Stage</a></li>
+                  <li><a href="#competences"><i class="fa fa-code"></i> Compétences</a></li>
+                  <li><a href="#projets"><i class="fa fa-folder"></i> Projets</a></li>
+                  <li><a href="btssio.html"><i class="fa fa-school"></i> BTS SIO</a></li>
+                  <li><a href="fichier/Tableau_de_synthese_-_Epreuve_E4_-_BTS_SIO_2023 – .xlsx"><i class="fa fa-school"></i> Epreuve E5</a></li>
+                  <li><a href="epreuve-e6.html"><i class="fa fa-school"></i> Epreuve E6</a></li>
+                  <li><a href="veilletech.html"><i class="fa fa-school"></i> Veilles</a></li>
+                  <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+              </ul>
+          </nav>
+          <footer>&copy; 2025 - Tous droits réservés</footer>
+      </aside>
+        <section id="profil" class="profil">
+            <header>
+                <h1>A PROPOS DE MOI <span>&#127773;</span></h1>
+            </header>
+            <section class="about">
+                <p>Je suis étudiante à l'<strong>EFREI Paris Panthéon-Assas</strong> à Villejuif (98) en première année de <strong>BTS SIO</strong> (Services Informatiques aux Organisations), spécialité <strong>SISR</strong> (Solutions d'Infrastructure, Systèmes et Réseaux).</p>
+                <p>J’ai toujours eu une appétence pour l’informatique et une curiosité pour les nouvelles technologies. C’est tout naturellement que je me suis tourné vers cette formation, après avoir obtenu mon <strong>BAC Général Scientifique - Mention Bien</strong> en 2023.</p>
+            </section>
+            
+            <section class="education">
+                <h2>Étudiante en BTS SIO (2024 - 2026) <span>&#128104;&#8205;&#127891;</span></h2>
+                <p><em>Étudiante de 1ᵉ année en BTS SIO - option SISR à l'Efrei Paris (98).</em></p>
+                <ul>
+                    <li><strong>École :</strong> EFREI PARIS - Villejuif (98)</li>
+                    <li><strong>Diplômes :</strong> Bac Général scientifique - Mention Bien</li>
+                    <li><strong>Téléphone :</strong> 07 61 93 80 06</li>
+                    <li><strong>Email :</strong> darellekamche13@gmail.com</li>
+                </ul>
+            </section>
+            
+            <section class="career">
+                <h2>Projet professionnel <span>&#127970;</span></h2>
+                <p>Professionnellement je souhaite m’orienter vers le métier <strong>« d'Expert Réseau Infrastructures et Sécurité »</strong>.</p>
+                <p>Après l’obtention de mon <strong>BTS SIO - BAC+2</strong>, je souhaiterais poursuivre mon cursus en suivant la formation <strong>BACHELOR CSI - BAC+3</strong>, puis par la suite mon objectif est de continuer vers le diplôme <strong>EXPERT RÉSEAUX INFRASTRUCTURES ET SÉCURITÉ (ERIS) - BAC+5</strong>.</p>
+                <p>L'ensemble de cette formation est dispensé à l'école <strong>Efrei Paris à Villejuif</strong>.</p>
+            </section>
+        </section>
+
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #ddeeff);
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+    </style>
+</body>
+</html>

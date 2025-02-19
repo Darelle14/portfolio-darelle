@@ -1,0 +1,253 @@
+
+/* Styles généraux */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  background: url('image/réseau.png') no-repeat center center/cover;
+  color: white;
+  scroll-behavior: smooth; /* Scroll fluide */
+}
+
+/* Barre latérale */
+.sidebar {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position:static;
+  left: 0;
+  top: 0;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.sidebar .profile {
+  text-align: center;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+#date-time {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(38, 86, 216, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+#date-time {
+  position: static;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#loginForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.profile h2 {
+  font-size: 1.5em;
+}
+
+.profile p {
+  font-size: 1em;
+  opacity: 0.8;
+}
+
+.sidebar nav ul {
+  list-style:none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar nav ul li i {
+  margin-right: 10px;
+}
+
+.sidebar footer {
+  text-align: center;
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+
+
+/* Contenu principal */
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  padding: 50px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h2 {
+  font-size: 1.8em;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 15px;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.content h1{
+  font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+}
+.content h1 span{
+  color: #ff2079;
+  text-shadow: 0  0 10px #ff2079;
+}
+.content .typewriter{
+  font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+  font-weight: 600;
+}
+.content .typewriter-text{
+  color: #206eff;
+  text-shadow: 0 0 10px #202fff;
+}
+.content p{
+  font-size: clamp(0.4rem , 0.2rem + 9vw, 1rem);
+  margin: 10px 0;
+}
+
+/* Style du menu déroulant */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  
+  padding: 5px 0;
+  list-style: none;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.dropdown-content li {
+  padding: 10px;
+  border-bottom: 1px solid ;
+}
+
+.dropdown-content li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content li a {
+  color: rgb(53, 52, 52);
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background: #343535;
+}
+
+/* Affichage du sous-menu au clic */
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+.social-links {
+    font-size: 3rem;
+    color: #3383ad;
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+    justify-content: space-between;
+}
+
+.material-icons {
+
+  font-size: 5rem;
+  color: #3383ad;
+  
+}
+
+
